@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>poo poo</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- font-awesome 4.7.0 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- JacaScript -->
+  <script src="../Script/poopoo.js"></script>
+
+
+  <!-- CSS file Link(항상 헤더 가장 하단으로 보낸다) -->
+
+  <link rel="stylesheet" href="../Styles/poopoo.css" />
+</head>
+
+<body>
+
+  <!-- 전체 container -->
+  <div class="container">
+
+    <!-- 공통 header -->
+    <header>
+      <div class="inner">
+     <!-- <img src="\src\Assets\Images\topImg.png" class="topImg" alt="topImg"> -->
+     <div class="headerImg" id="headerImg-01"><img src="\src\Assets\Images\1_1타이틀.png" class="topImg" alt="topImg"> <div>
+     <div class="headerImg" id="headerImg-02"><img src="\src\Assets\Images\1_2상단캐릭터.png" class="topImg" alt="topImg"><div> 
+     <div class="headerImg" id="headerImg-03"><img src="\src\Assets\Images\1_3기간대상경품.png" class="topImg" alt="topImg"> <div>
+
+    </div>
+    </header>
+
+      <!-- <!-- 본문 : 1.공모전참여하기 /2공모전참여기간/3공모전경품 4공모전참여방법 5.카톡채널문의  -> -->
+    <main>
+    <div class="inner">
+        <!-- 1공모전참여하기 -------------------------------------------------------------->
+     <div id ="maindiv1" class="mainDiv" >
+       <div id="starfishImg"><img src="\src\Assets\Images\불가사리.png" class="starfishImg" alt="starfishImg"> </div>
+     <!-- <img src="\src\Assets\Images\mainimg\1공모전참여하기.png" class="mainimg1" alt="...">  -->
+
+<!-- ====================== -->   
+<!--  01 공모전 참여        -->   
+<!-- ====================== -->   
+       <div id="mainOneTop"    class="mainOne">
+        <img src="\src\Assets\Images\공모전 참여하기01topImg.png" class="mainpOneTopImg" alt=""></div>
+    
+
+        <div class="snsDiv">     
+         <div id="yutube"    class="sns">
+          <img src="\src\Assets\Images\유튜브.png" class="yutubeImg" alt=""></div>
+         <div id="instar""    class="sns">
+          <img src="\src\Assets\Images\인스타그램.png" class="yutubeImg" alt=""></div>
+        </div>
+
+
+
+    <div id="mainOneForm"    class="mainOne">
+
+    <form action="./result.html" name="send" method="get">
+<!--  핸드폰  입력       -->         
+      <div><input type="text" id="name" name="name" placeholder="&nbsp; &nbsp;아이 이름을 적어주세요" > </div>
+<!--  핸드폰  입력       -->         
+      <div> <input type="email" id="email" name="email" placeholder="&nbsp; &nbsp;이메일을 입력해주세요" > </div>
+
+<!-- 여/남 선택시 흔들거림 왜그러지?     => #genderRadiobtn input:focus   input 초기화?내지는 안쓴다?-->
+    <div id="genderRadiobtn"  class="mainOne">
+      <div class="gender"><label for="girl"><input type="radio" name="gender" value="girl"  >&nbsp;여아</label></div>
+      <div class="gender"><label for="boy"> <input type="radio"  name="gender"  value="boy" >&nbsp;남아</label></div>
+    </div>
+<!--  나이 입력 3세~8세      -->       
+    <select name="age" id="age" size="1" placeholder="나이를 입력해주세요">
+      <option selected="none">&nbsp; &nbsp;나이를 입력해주세요</option>
+      <option type=radio name="chkInfo" value="3">3세</option>
+      <option type=radio name="chkInfo" value="4">4세</option>
+      <option type=radio name="chkInfo" value="5">5세</option>
+      <option type=radio name="chkInfo" value="6">6세</option>
+      <option type=radio name="chkInfo" value="7">7세</option>
+      <option type=radio name="chkInfo" value="8">8세</option>
+    </select>
+<!--  핸드폰  입력       -->   
+  <div class="inputPhone"><input type="tel" id="phone" name="phone" placeholder="&nbsp; &nbsp;핸드폰 번호를 입력해주세요." > </div>
+<!--  첨부하기  => 사진 첨부하기 -->
+  <div  class="inputFile" id="inputFileDiv">
+    <span>사진을 첨부해주세요</span>
+    <label  class="input-file-button" for="input-file" placeholder="&nbsp; &nbsp;사진을 첨부해주세요.">첨부하기</label>
+    <input type="file" id="input-file" class="attachFile" name="input-file" value="사진첨부" placeholder="&nbsp; &nbsp;사진을 첨부해주세요." >
+ 
+  </div>
+
+
+
+<!--  (핑크/블루)쿠션 체크 -->
+  <div class="inputUrl"><input type="text"  id="instalingUrl" name="instalingUrl" placeholder="&nbsp; &nbsp;인스타그램에 업로드한 게시물 URL을 입력해주세요." ></div>
+    <pre class="redText">&nbsp; &nbsp;*인스타그램 업로드는 필수입니다.</pre><br><br>
+
+  <strong class="cushionText">원하시는 쿠션 색상을 클릭해주세요.</strong><br>
+
+  <div class="cushionDiv">     
+
+      
+      <input type = "radio" name = "cushion" value = "pinkCushion"  id="selectPinkCushion" 
+      style="width:0px;height:0px;opacity:0;" >
+
+      <label for="selectPinkCushion" > 
+        <div id="selectPinkCushion" class="inputCushion">
+          <img src = "\src\Assets\Images\분홍색쿠션.png" height = "200px" width = "200px"/>
+        </div>
+      </label>
+      
+  
+    
+  
+      
+        <input type = "radio" name="cushion" value = "blueCushion"  id="selectBlueCushion"
+        style="width:0px;height:0px;opacity:0;" >
+        <label for="selectBlueCushion"  >
+        <div id="selectBlueCushion"    class="inputCushion">
+        <img src = "\src\Assets\Images\하늘색쿠션_선택.png" height = "200px" width = "200px"/>
+        </div>
+      </label>
+      
+  
+
+  </div>
+
+    <pre>* 제출 이후 <strong>중도 색상 변경이 어려우니,</strong>
+    신중하게 선택해주세요!</pre>
+
+
+
+<!--  개인정보 동의 체크 -->
+    <div id = "checkDivId1" class="checkDiv">
+   <input type="checkbox" name="checkAgree" class="agree" id="checkAgree1" value="personInfoConsent1" />
+    <p class="agreeP"> 개인정보 수집, 이용, 활용 동의&nbsp; &nbsp;</p><strong> &nbsp;[자세히보기]</strong></div>
+    <div  id = "checkDivId2" class="checkDiv">
+     <input type="checkbox" name="checkAgree" class="agree" id="checkAgree2" value="personInfoConsent2" />
+    <p class="agreeP"> 고유식별정보 처리에 관한 동의&nbsp; </p><strong>&nbsp; [자세히보기]</strong><br></div>
+  
+
+<!-- 공모전 참여하기 버튼 -->
+    <div><button type ="sumit" class="btnFormSend" type="button" onclick="location.href='링크주소';"> 공모전 참여하기</button></div>
+    <pre class="mainEndPre">* 본 공모전 참여 대상은 <strong>3세~8세</strong> 입니다.</pre>
+  
+  
+  </form>
+  </div> <!-- id ="maindiv1" class="mainDiv"  close-->
+  </div> <!-- inner close-->
+
+
+
+
+
+<!-- 02 공모전 기간 ---------------------------------------------------------------------------->
+      <div id ="maindiv2"  class="mainDiv" >    
+      <div  class="mainDiv2Img" > <img src="\src\Assets\Images\2공모전참여기간.png" id="mainDiv2Img" alt="..."> </div>
+      <span class="mainDiv2Btn" ><button class="btnMaindiv2" type="button" onclick="window.open('링크주소');"><p>해시태그 복사하기</p></button> </span>
+                                                                   <!-- 새 창으로 링크 이동 --> 
+     </div>
+<!-- 03 공모전 당첨 경품 ------------------------------------------------------------------------>
+      <div id ="maindiv3"  class="mainDiv" >
+      <div><img src="\src\Assets\Images\mainimg\3공모전경품.png" class="mainDiv3Img" alt="..."> </div>
+      </div>
+<!-- 04 공모전 참여방법 ------------------------------------------------------------------------->
+      <div id ="maindiv4"  class="mainDiv" >
+        <div><img src="\src\Assets\Images\mainimg\4공모전참여방법.png" class="mainDiv4Img" alt="..."></div>
+      </div>
+<!-- 05 공모전 문의하기  (Ch 카카오 크니쁘니와 친구들)  ----------------------------------------->      
+      <div  id ="maindiv5" class="mainDiv" >
+        <div><img src="\src\Assets\Images\div5Img.png" id="mainDiv5Img" alt="..."></div>
+        <div><button class="btnMaindiv5" type="button" onclick="location.href='링크주소';"> 공모전 관련하여 문의하기</button></div>
+                                                                  <!-- 현재창에서 링크 이동 -->
+      </div>
+      </div>
+    </main>
+
+  </div> 
+
+
+<!-- footer 공통  유의사항 ---------------------------------------------------------------------->
+    <footer>
+      <div class="inner">
+      <div class="bottom" >
+            <div class="bottom1" >
+              <div class="bottomText" >
+              <!-- <img src="\src\Assets\Images\bottomimg\유의사항.png" class="bottomimg" alt="..."> -->
+          <span>
+             <p  class="bottomTextTitle"><b>유의사항</b></p>
+             <p>
+              개인정보 관련 안내 문구 및 유의사항들을 적습니다. <br>
+              개인정보 관련 안내 문구 및 유의사항들을 적습니다 개인정보 관련 안내 문구 및 유의사항들을 적습니다<br>
+              개인정보 관련 안내 문구 및 유의사항들을 적습니다.<br>
+              개인정보 관련 안내 문구 및 유의사항들을 적습니다.<br>
+            </p>
+          </span>
+            </div>
+          </div>
+<!-- footer 공통  fixed : 공모전 참여신청 배너 ------------------------------------------------------>
+            <div id ="bottom2" class="bottom2" >
+              <img src="\src\Assets\Images\banner\크니쁘니.png" class="imgBanner" alt="...">
+          
+            <span class="endBannerText" ><batton><p>공모전 참여신청 바로가기  ></p></batton></span><br>
+         
+            </div>
+          </div>
+
+        </div>
+</footer>
+</body>
+</html>

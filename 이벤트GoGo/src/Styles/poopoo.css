@@ -1,0 +1,537 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Reset CSS */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* font-weight: 500;은 bold보다 연하고 normal보다 진하다 */
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+header div{
+  height: 35%;
+}
+
+body{
+  /* font-family: "맑은 고딕", 돋움, 굴림; */
+  background: url(/../src/Assets/Images/배경.png) no-repeat;
+  background-size: cover;
+  font-size: 15px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  /* background-attachment: fixed; */
+  background-position: center center:
+}
+
+.container{ /* grid를 사용해서 간단하게 수직 중앙 정렬하는 법 !!!*/
+  display: grid;
+  place-items: center;
+
+}
+
+
+.inner{
+  justify-content: center; 
+  flex-direction: column; 
+}
+
+.inner img,
+.inner div
+{
+ text-align: center;
+ justify-content: center; 
+  /* /* flex-direction: column;  */
+  padding: 10px 0px 0px 0px;  
+
+}
+
+/* header .topImg{
+  width: 600px;
+  padding: 180px 0px 90px 0px;
+  margin: 30px 0px 100px 0px;  
+  
+} */
+
+header .topImg{
+  width: 600px;
+  margin: 100px 0px 15px 0px;
+
+}
+
+  
+#headerImg-03{
+padding-bottom: 80px;
+}
+
+
+/* checkup============================= */
+main .mainimg1{
+  /* display: none; */
+  top: -250px;
+  right: 45px;
+  z-index: 1;
+  float:left ; margin: 0%;
+  padding: auto;
+   /* #starfishIg와 위치 연관관계 있음(positin과 float 과 z-index!!! */
+  } 
+
+
+
+  /* .mainimg에 display: none; 과 연관관계 => 
+1. 최종 none 상태로 정리할것!!! 
+2. 그리고 html 불가사리 태그도 최종은 활성화 시킬것!!! */
+#starfishImg{
+  position: relative;
+  top:-2.6%;
+  right:-52%; 
+  z-index: 1;
+  height: 5px;
+  padding: 0;
+  margin: 0;
+}
+/* checkup============================= */
+.mainDiv{
+  display: flex;
+  justify-content: center; 
+  flex-direction: column; 
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 35px;
+  width: 510px; 
+  border-radius:1.5% ;
+
+}
+
+/* =======================================================================>>>공모전 01 */
+#maindiv1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: rgb(255, 255, 255);
+  /* height: 2110px; */
+  height: 2000px;
+}
+
+input:focus {
+  outline: 3px solid #239AFF;
+  size:110%;
+} /* outline 테두리 속성 수정 */
+/* input:focus {outline: none;} outline 테두리 없애기 */
+
+/* #input-file */
+input, #inputFileDiv{
+
+  width: 450px;
+  height: 80px;
+  background-color:#F7F7F7;
+  border:none;
+  color: #858181; 
+  font-size:16px;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 20px;
+  vertical-align: middle; 
+  /*input(radio,chekbox),label 수직 가운데 정렬 맞추는 방법*/ 
+
+}
+
+
+.input-file-button{
+  padding: 6px 25px;
+  background-color:#279AFD;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+form div, .snsDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: auto; 
+}
+
+form input,label{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  
+}
+
+.picture{
+  vertical-align: middle;
+  width: 450px;
+  height: 80px;
+}
+
+
+.redText{
+  color: #ff0000;
+  text-align:left;
+  padding: 0 0 0 10px;
+  margin: 0%;
+}
+
+#genderRadiobtn input:focus {
+  display: none;
+  }
+  
+div #genderRadiobtn{
+  width: 450px;
+  height: 80px;
+  /* background-color:#F7F7F7;  */
+  border:none;
+  font-size:22px;
+  font-weight: 700;
+  border-radius: 10px;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#genderRadiobtn input{
+  width:12px;
+  height: 12px; 
+
+  font-size:22px;
+  margin:auto;
+}
+.gender{
+margin-left: 0px;
+margin-right: 60px;
+  /* margin-top: 0;
+  padding-top: 0;  */
+}
+
+#age{
+  width: 450px;
+  height: 80px;
+  background-color:#F7F7F7;
+  border:none;
+  /* outline: 3px solid #239AFF; */
+  /* outline: 3px solid #239AFF; */
+  font-size:16px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+
+select:focus {
+  outline: 3px solid #239AFF;
+size:110%;
+}
+
+select:focus {
+  outline: 3px solid #239AFF;
+  size:110%;
+} /* outline 테두리 속성 수정 */
+/* input:focus {outline: none;} outline 테두리 없애기 */
+
+
+
+/* type="file" 해당 필드의 스타일을 변경할 수 없지만, 
+abel태그와 연동하여 input file 태그의 기능을 대신!!(for 속성 이용 연결 방법) */
+
+#input-file{
+display:none; 
+}   /* 기존의 input file 태그 숨김 */
+
+span{
+margin-left: 10px;
+}
+
+/* 라벨 클래스 => 호버 안됨!!! */
+/* .input-file-button :hover{
+    size:110%;
+}  */
+
+
+/* input # => 호버 안됨!!! */
+/* div #input-file:hover{
+  size:110%;
+} */
+
+div #inputFileDiv:hover{
+  outline: 3px solid #239AFF;
+  size:110%;
+}
+
+#inputFileDiv{
+display: flex;
+/* justify-content: flex-end; */
+justify-content: space-between;
+padding-top: 0px;
+
+  }
+
+  /* label에 기존 input형태대로 모양을 잡어줌 */
+.input-file-button{
+  padding: 0px 25px;
+  margin: 0px 20px 0px 50px;
+  height: 60px;
+  background-color:#239AFF;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  
+}
+
+
+  
+.btnFormSend{
+  justify-content: center;
+  align-items: center;
+  background-color: #279AFD;
+  color: #ffffff;
+  border-radius: 3em;
+  border:none;
+  width: 425px;
+  height: 70px;
+  font-size:22px;
+  font-weight:600;
+margin-top: 50px;
+  margin-bottom: 30px;
+  }
+
+  .cushionText{
+    font-size:22px;
+    font-weight:600;  
+  }
+/* 쿠션선택  
+div 클래스에 => content:url(back.jpg);
+
+*/
+
+/* 
+#inputCushionPink{
+    content:url(\src\Assets\Images\분홍색쿠션.png);
+    height: 236px;
+    width:220px;
+}
+#inputCushionBlue{
+  content:url(\src\Assets\Images\하늘색쿠션_선택.png);
+  height: 236px;
+  width:220px;
+} */
+
+/* radio 버튼이 거슬립니다.안보이도록 지워버리기.
+선택한 이미지 정보가 아닌 null이 전달이 됨*/
+.inputCushion {
+  margin: 0px 10px 0px 10px;
+}
+
+
+/*    radio 버튼 사이즈 조절 안되서 인라인으로 넣음!!!
+div >. cushionDiv > input[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+} */
+
+/* label 태그 추가
+radio 버튼 혹은 그림을 누르면 값이 선택이 되도록 해야 함
+(원래는 radio 영역만 해당)
+그러기 위해서 <div>로 묶었던 부분을 <label>로 바꿉니다.
+그러면 둘 중에 하나만 눌러도 제대로 선택이 됩니다.
+물론 우리는 지금 radio를 없앴으니 그림을 누르면 선택이 되는 거겠죠.
+ */
+
+input[type=radio] + label div{
+  cursor: pointer;
+}
+input[type=radio]:checked + label div{
+  outline: 3px solid #239AFF;
+  border-radius: 15px;
+  size:110%;
+}
+
+/* #selectPinkCushion:hover,
+#selectBlueCushion:hover{
+  outline: 3px solid #239AFF;
+  size:110%;
+} */
+#selectPinkCushion,
+#selectBlueCushion{
+  margin: 0;
+  padding: 0;
+}
+
+
+#checkAgree1,
+#checkAgree2{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px ;
+    padding: 0px 10px 0px 10px ;
+
+  }
+
+.checkDiv p{
+  text-align: justify ;  /* 양쪽 정렬 */
+}
+
+#checkDivId1{
+  margin-top: 50px;
+}
+
+  .mainEndPre{
+    padding-bottom: 50px;
+  }
+
+  .snsDiv img ,
+  .cushionDiv img{
+    padding: 10px 10px  10px 10px  ;
+  }
+
+/* =======================================================================>>>공모전 01 끝 */
+ #maindiv2 {
+  padding-top: 20px;
+  height: 1400px;
+  }
+
+  #mainDiv2Img{
+    /* padding-top: 40px; */
+    padding-bottom: 30px;
+  }
+
+.btnMaindiv2{
+background-color: #000000;
+color: #f9ecec;
+border-radius: 0.5em;
+width: 300px;
+height: 80px;
+font-size:22px;
+}
+
+
+  #maindiv3 {
+padding-top: 30px;
+  height: 850px;
+  }
+
+  #maindiv4{ 
+  padding-top: 30px;
+  height: 1040px ;
+  /* display: flex;    */
+  justify-content: center;
+  align-items: center;    
+}
+.mmainDiv3Img{
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.mainDiv4Img{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#maindiv5 {
+  background-color: #ffde00;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  width: 510px; 
+  height: 550px;
+  }
+
+  #mainDiv5Img{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .btnMaindiv5{
+  justify-content: center;
+  align-items: center;
+  background-color: #3C2220;
+  color: #f9ecec;
+  border-radius: 3em;
+  width: 425px;
+  height: 80px;
+  font-size:22px;
+  font-weight:600;
+  }
+
+ .mainDiv {
+  display: block;
+ }
+
+
+footer{
+  height: 10%;
+  padding: 0px 0 0px 0px;
+}
+
+div .bottom{
+  padding: 0px 0px 0px 0px;
+}
+
+footer .bottom1 {
+  padding: 0px 0px 0px 0px;
+background-color: #0d6097;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+  height: 200px;
+  padding-bottom: 150px;
+}
+
+.bottomText span{ 
+ opacity: 65%;
+  font-size: 15px;
+  color:  #ffffff;
+  text-align: left;
+}
+ .bottomTextTitle{
+
+  text-align: left;
+  font-size: 25px;
+
+}
+
+
+ 
+#bottom2 { /* flex 아이템들 가로.세로 중앙 정렬 */
+  padding: 0px 0 0px 0px;
+  background-color: #843c92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+position: fixed;
+z-index: 999;
+width: 100%;
+/* height: 150px;
+ top: 800px; */
+ height: 150px;
+bottom: 0%;
+
+}
+
+.endBannerText{
+  font-size: 30px;
+  color:  #ffffff;
+  z-index: 2;
+
+  padding: 20px 100px 20px 30px;
+/* margin-right: 20px; */
+}
+
+button:hover {
+  transform: scale(1.1);
+}
